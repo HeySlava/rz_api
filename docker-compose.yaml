@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  backend:
+    build: .
+    ports:
+    - "8080:${RZ_PORT}"
+    volumes:
+      - ./rz.sqlite:/opt/app/rz.sqlite
+    restart: always

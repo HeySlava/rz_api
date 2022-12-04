@@ -24,7 +24,11 @@ def configure():
 
 def main():
     configure()
-    uvicorn.run(app, port=settings.port)
+    uvicorn.run(
+            app,
+            port=settings.port,
+            host=settings.host
+        )
 
 
 if __name__ == '__main__':
