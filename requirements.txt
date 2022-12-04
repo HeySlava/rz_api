@@ -1,5 +1,6 @@
-sqlalchemy
 fastapi
-uvicorn
-python-dotenv
 pydantic
+pydantic_sqlalchemy
+python-dotenv
+sqlalchemy
+uvicorn
