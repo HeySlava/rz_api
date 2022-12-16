@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 class ParamsModel(BaseModel):
     id: int
-    method_id: str
+    method_id: int
     param: str
 
 class MethodModel(BaseModel):

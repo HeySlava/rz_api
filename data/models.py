@@ -28,5 +28,5 @@ class Param(Base):
     id: int = sa.Column(sa.Integer, primary_key=True, autoincrement=True)
     param: str = sa.Column(sa.String)
 
-    method_id = sa.Column(sa.Integer, sa.ForeignKey('methods.id'))
+    method_id: int = sa.Column(sa.Integer, sa.ForeignKey('methods.id'))
     method = orm.relationship('Method', back_populates='params')
