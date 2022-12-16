@@ -15,3 +15,14 @@ class MethodModel(BaseModel):
 class DatamartModel(BaseModel):
     id: int
     datamart: str
+
+class SQL(BaseModel):
+    sql: str
+
+class SQLbody(BaseModel):
+    sql: SQL
+
+class DummyModel(BaseModel):
+    url: str
+    body: SQLbody
+    headers: dict
